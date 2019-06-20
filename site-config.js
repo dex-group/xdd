@@ -1,16 +1,16 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
-  siteTitle: `Gatsby Starter DEX`,
-  siteTitleShort: `GatsbyDEX`,
-  siteDescription: `An opinionated starter for Gatsby.`,
-  siteUrl: `https://dex.group/gatsby`,
-  themeColor: `#000`,
-  backgroundColor: `#fff`,
+  siteTitle: `小丁丁微信群`,
+  siteTitleShort: `小丁丁`,
+  siteDescription: `A Wechat group of all full-stack makers.`,
+  siteUrl: `https://ding.one/xdd`,
+  themeColor: `hsla(233, 32%, 56%, 1)`,
+  backgroundColor: `hsla(261, 92%, 5%, 1)`,
   pathPrefix: null,
   logo: path.resolve(__dirname, 'src/images/icon.png'),
   social: {
-    twitter: `gatsbyjs`,
+    twitter: `dingyi`,
     fbAppId: `966242223397117`,
   },
 };

@@ -1,19 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
+import tw from 'tailwind.macro'
 
 export const Container = styled.nav`
   ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-
+    ${tw`flex p-0 list-none`};
     li {
-      text-transform: uppercase;
-      font-size: 1.3rem;
-
-      & + li {
-        margin-left: 2rem;
+      ${tw`text-xs mr-8`};
+      .active {
+        color: hsla(233, 32%, 56%, 1);
       }
     }
   }
@@ -23,10 +19,14 @@ const Nav = () => (
   <Container>
     <ul>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/apply" activeClassName="active">
+          申请加入
+        </Link>
       </li>
       <li>
-        <a href="https://github.com/fabe/gatsby-universal">GitHub</a>
+        <Link to="/members" activeClassName="active">
+          小伙伴们
+        </Link>
       </li>
     </ul>
   </Container>

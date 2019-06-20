@@ -1,50 +1,33 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import posed from 'react-pose'
 import styled from '@emotion/styled'
+import tw from 'tailwind.macro'
 import Nav from './nav'
 
-export const Container = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem;
-
+const Container = styled.header`
+  ${tw`flex mb-24 items-center justify-between`}
   a {
-    color: #757575;
-    transition: color 0.2s ease;
-    text-decoration: none;
-
-    &:hover {
-      color: inherit;
-    }
+    ${tw`text-xs`}
   }
 `
 
-// Example of a component-specific page transition
 const AnimatedContainer = posed.div({
   enter: {
-    y: 0,
     transition: {
-      ease: 'easeInOut',
+      opacity: { ease: 'backInOut', duration: 300 },
     },
   },
   exit: {
-    y: '-100%',
     transition: {
-      ease: 'easeInOut',
+      opacity: { ease: 'backInOut', duration: 300 },
     },
   },
 })
 
-const Header = ({ title }) => (
+const Header = () => (
   <AnimatedContainer>
     <Container>
-      <Link to="/">
-        <h1>{title}</h1>
-      </Link>
-
       <Nav />
     </Container>
   </AnimatedContainer>

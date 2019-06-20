@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import tw from 'tailwind.macro'
 
 const Container = styled.div`
-  ${tw`px-8 py-16 max-w-6xl`};
+  ${tw`flex flex-col min-h-screen px-8 py-8 max-w-xl mx-auto my-0`};
 `
 
 const Box = ({ children }) => <Container>{children}</Container>
