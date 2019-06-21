@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://xdd.netlify.com"
+  to = "https://ding.one/xdd"
+  status = 200
+  force = true
