@@ -18,14 +18,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-webpack-size`,
-    {
-      resolve: `gatsby-plugin-react-svg`,
-      options: {
-        rule: {
-          include: /images\/.*\.svg$/,
-        },
-      },
-    },
     `gatsby-plugin-postcss`,
     {
       resolve: 'gatsby-plugin-purgecss',
@@ -53,6 +45,13 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve('./src/templates/page.js'),
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-101495671-3',
+        head: false,
       },
     },
     `gatsby-plugin-offline`,
