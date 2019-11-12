@@ -54,6 +54,12 @@ module.exports = {
         head: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-fathom',
+      options: {
+        siteId: 'RLFWCVSE',
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],
