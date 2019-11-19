@@ -9,7 +9,7 @@ import Hero from './hero'
 import Footer from './footer'
 
 const Layout = ({ data, children }) => (
-  <div>
+  <>
     <Global
       styles={css`
         html {
@@ -36,7 +36,7 @@ const Layout = ({ data, children }) => (
         body {
           margin: 0;
           padding: 0;
-          color: hsla(233, 32%, 56%, 1);
+          color: hsl(233, 72%, 85%, 1);
           background: hsla(261, 92%, 5%, 1);
           min-height: 100vh;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -116,7 +116,7 @@ const Layout = ({ data, children }) => (
       {children}
       <Footer />
     </Box>
-  </div>
+  </>
 )
 
 Layout.propTypes = {

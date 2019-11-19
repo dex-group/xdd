@@ -2,7 +2,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import tw from 'tailwind.macro'
 
-const AboutWrapper = styled.div``
+const AboutWrapper = styled.main``
 
 const Info = styled.div`
   ${tw`font-hairline leading-relaxed`};
@@ -15,7 +15,8 @@ const About = () => (
   <AboutWrapper>
     <Info>
       <p>
-        这里是一个聚集了国内顶尖全栈设计师、全栈开发者、自由职业者、产品经理、总监、VP、CEO的交流群。群内聊天话题包括但不局限于设计、开发、苹果、电子产品、养猫、护肤、八卦等。除了主群，我们还有
+        这里是一个聚集了国内顶尖全栈设计师、全栈开发者、自由职业者、产品经理、总监、VP、CEO
+        的交流群。群内聊天话题包括但不局限于设计、开发、苹果、电子产品、养猫、护肤、八卦等。除了主群，我们还有
         ❖ Figma 交流群、
         <span role="img" aria-label="React">
           ⚛️

@@ -5,14 +5,14 @@ import styled from '@emotion/styled'
 import tw from 'tailwind.macro'
 import Nav from './nav'
 
-const Container = styled.header`
+const Container = styled.div`
   ${tw`flex mb-24 items-center justify-between`}
   a {
     ${tw`text-xs`}
   }
 `
 
-const AnimatedContainer = posed.div({
+const AnimatedContainer = posed.header({
   enter: {
     transition: {
       opacity: { ease: 'backInOut', duration: 300 },

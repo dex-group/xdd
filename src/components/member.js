@@ -58,7 +58,7 @@ const Member = () => (
       const table = data.allAirtable.edges
       return (
         <>
-          <Note>截止到 2019 年 11 月，共 439 人。（不分先后）</Note>
+          <Note>截止到 2019 年 11 月，共 442 人。（不分先后）</Note>
           <List>
             {table.map((props, i) => (
               <Members key={i}>
